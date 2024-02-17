@@ -1,0 +1,12 @@
+server:
+  port: 3020
+
+spring:
+  datasource:
+    url: jdbc:postgresql://127.0.0.1:54322/vertxbench
+    username: postgres
+    password: vertxbench
+    hikari:
+      minimum-idle: 5
+      maximum-pool-size: 10
+
