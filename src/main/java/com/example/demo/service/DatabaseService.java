@@ -12,7 +12,7 @@ public class DatabaseService {
 
 
     public int giveMeANumber(int max) {
-        return jdbcTemplate.queryForObject("SELECT FLOOR(RANDOM() * ?)", Integer.class, max);
+        return jdbcTemplate.queryForObject("SELECT FLOOR(RANDOM() * ?)", Integer.class, max) + 1;
     }
 
     public int giveMeANumber() {

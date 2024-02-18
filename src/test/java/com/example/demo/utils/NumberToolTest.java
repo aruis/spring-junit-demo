@@ -1,14 +1,14 @@
-package com.example.demo;
+package com.example.demo.utils;
 
-import com.example.demo.utils.NumberTool;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
-public class UtilsTest {
+class NumberToolTest {
+
 
     @Test
     void simple() {
@@ -28,4 +28,5 @@ public class UtilsTest {
     void testPlus(int a, int b, double result) {
         assertEquals(result, NumberTool.plus(a, b));
     }
+
 }
