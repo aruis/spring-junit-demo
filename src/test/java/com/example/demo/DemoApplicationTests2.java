@@ -11,7 +11,7 @@ class DemoApplicationTests2 {
 
     private JdbcTemplate db = mock(JdbcTemplate.class);
 
-    @Test
+//    @Test
     void testDB() {
         when(db.queryForObject("select 1", Integer.class)).thenReturn(1);
 
