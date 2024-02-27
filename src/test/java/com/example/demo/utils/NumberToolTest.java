@@ -17,7 +17,8 @@ class NumberToolTest {
 
     @Test
     void simple2() {
-        assertThat(NumberTool.plus(1, 1)).isEqualTo(2);
+        assertThat(NumberTool.plus(1, 1))
+                .isEqualTo(2);
     }
 
     @ParameterizedTest

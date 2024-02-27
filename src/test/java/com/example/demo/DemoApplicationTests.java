@@ -1,5 +1,6 @@
 package com.example.demo;
 
+import com.example.demo.service.DatabaseService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -14,6 +15,9 @@ class DemoApplicationTests {
 
     @Autowired
     private JdbcTemplate db;
+
+    @Autowired
+    private DatabaseService service;
 
     @Test
     void testDB() {

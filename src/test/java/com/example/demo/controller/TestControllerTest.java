@@ -27,7 +27,8 @@ class TestControllerTest {
     @Test
     void testDB() throws Exception {
 
-        when(databaseService.giveMeANumber()).thenReturn(5, 10);
+        when(databaseService.giveMeANumber())
+                .thenReturn(5, 10);
 
         this.mockMvc.perform(
                         MockMvcRequestBuilders.get("/api/testDB")

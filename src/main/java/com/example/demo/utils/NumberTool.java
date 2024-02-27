@@ -6,4 +6,8 @@ public class NumberTool {
         return a + b;
     }
 
+    public static int plus2(int a, int b) {
+        return a + b;
+    }
+
 }
